@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import PageDefault from '../../../components/PageDefault';
 import FormField from '../../../components/FormField';
+import Button from '../../../components/Button';
 
 function CadastroCategoria() {
   const valoresIniciais = {
@@ -27,22 +28,33 @@ function CadastroCategoria() {
     );
   }
 
-  // ============
-
   useEffect(() => {
-    if (window.location.href.includes('localhost')) {
-      const URL = 'https://devgooflix.herokuapp.com/categorias';
-      fetch(URL)
-        .then(async (respostaDoServer) => {
-          if (respostaDoServer.ok) {
-            const resposta = await respostaDoServer.json();
-            setCategorias(resposta);
-            return;
-          }
-          throw new Error('Não foi possível pegar os dados');
-        });
-    }
-  }, []);
+    const URL_TOP  = window.location.hostname.includes('localhost')
+      ? 'http´://localhost:3000'
+      : 'https://devgooflix.herokuapp.com/categorias';
+    fetch(URL_TOP)
+      .then(async (respostaDoServidor) => {
+        const resposta = await respostaDoServidor.json();
+        setCategorias([
+          ...resposta,
+        ])
+      })
+  });
+
+  // useEffect(() => {
+  //   if (window.location.href.includes('localhost')) {
+  //     const URL = 'https://devgooflix.herokuapp.com/categorias';
+  //     fetch(URL)
+  //       .then(async (respostaDoServer) => {
+  //         if (respostaDoServer.ok) {
+  //           const resposta = await respostaDoServer.json();
+  //           setCategorias(resposta);
+  //           return;
+  //         }
+  //         throw new Error('Não foi possível pegar os dados');
+  //       });
+  //   }
+  // }, []);
 
   return (
     <PageDefault>
@@ -63,21 +75,9 @@ function CadastroCategoria() {
       }}
       >
 
-        <FormField
-          label="Nome da Categoria"
-          type="text"
-          name="nome"
-          value={values.nome}
-          onChange={handleChange}
-        />
+        <FormField label="Nome da Categoria" type="text" name="nome" value={values.nome} onChange={handleChange} />
 
-        <FormField
-          label="Descrição:"
-          type="textarea"
-          name="descricao"
-          value={values.descricao}
-          onChange={handleChange}
-        />
+        <FormField label="Descrição" type="textarea" name="descricao" value={values.descricao} onChange={handleChange} />
         {/* <div>
           <label>
             Descrição:
@@ -90,13 +90,7 @@ function CadastroCategoria() {
           </label>
         </div> */}
 
-        <FormField
-          label="Cor"
-          type="color"
-          name="cor"
-          value={values.cor}
-          onChange={handleChange}
-        />
+        <FormField label="Cor" type="color" name="cor" value={values.cor} onChange={handleChange} />
         {/* <div>
           <label>
             Cor:
@@ -109,9 +103,9 @@ function CadastroCategoria() {
           </label>
         </div> */}
 
-        <button>
+        <Button>
           Cadastrar
-        </button>
+        </Button>
       </form>
 
       <ul>
