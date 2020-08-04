@@ -34,6 +34,7 @@ return (
         event.preventDefault();
         // alert('Vídeo cadastrado com sucesso!!!');
 
+  
         const categoriaEscolhida = categorias.find((categoria) => {
           return categoria.titulo === values.categoria;
         });
@@ -42,7 +43,7 @@ return (
           titulo: values.titulo,
           url: values.url,
           categoriaId: categoriaEscolhida.id,
-        })
+            })
           .then(() => {
             console.log('Cadastrado com sucesso!');
             history.push('/');
