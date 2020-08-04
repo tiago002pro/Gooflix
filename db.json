@@ -26,6 +26,12 @@
         "text": "Maverick City - Official Site",
         "url": "https://www.maverickcitymusic.com/"
       }
+    },
+    {
+      "titulo": "Projeto Sola",
+      "descricao": "",
+      "cor": "#110AFF",
+      "id": 4
     }
   ],
   "videos": [
@@ -174,46 +180,16 @@
       "url": "https://www.youtube.com/watch?v=ixknfMJt21w"
     },
     {
+      "titulo": "Colossenses 1 e Da Vida, o Melhor - Advento Tour em São Paulo - Projeto Sola",
+      "url": "https://www.youtube.com/watch?v=Xzbj3r3h7ps",
+      "categoriaId": 4,
       "id": 25
     },
     {
+      "titulo": "Redenção - Advento Tour em São Paulo - Projeto Sola",
+      "url": "https://www.youtube.com/watch?v=sX0KVSex6lI",
+      "categoriaId": 4,
       "id": 26
-    },
-    {
-      "id": 27
-    },
-    {
-      "id": 28
-    },
-    {
-      "id": 29
-    },
-    {
-      "id": 30
-    },
-    {
-      "titulo": "Rend Collective - You Bled OFFICIAL",
-      "url": "https://www.youtube.com/watch?v=3N3h0BKV6gw",
-      "categoriaId": 1,
-      "id": 31
-    },
-    {
-      "titulo": "Have My Heart (feat. Chandler Moore & Chris Brown) - Maverick City | TRIBL",
-      "url": "https://www.youtube.com/watch?v=U3Skc4MQlqU",
-      "categoriaId": 3,
-      "id": 32
-    },
-    {
-      "titulo": "Colossenses 1 e Da Vida, o Melhor - Advento Tour em São Paulo - Projeto Sola",
-      "url": "https://www.youtube.com/watch?v=Xzbj3r3h7ps",
-      "categoriaId": 1,
-      "id": 33
-    },
-    {
-      "titulo": "Isaías 53 & Foi na Cruz | IPALPHA Música",
-      "url": "https://www.youtube.com/watch?v=HML9NUQJZEU",
-      "categoriaId": 1,
-      "id": 34
     }
   ]
 }

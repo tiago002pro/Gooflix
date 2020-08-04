@@ -13,11 +13,19 @@ const Button = styled.button`
     border-radius: 5px;
     text-decoration: none;
     display: inline-block;
-    transition: opacity .3s;
+    /* transition: opacity .3s; */
 
     background-color: #141414;
 
-    &:hover,
+    &:hover{
+        -moz-transform: scale(1.1);
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
+        color: var(--white);
+        background-color: red;
+        
+        
+    },
     &:focus {
         opacity: .5;
     }
