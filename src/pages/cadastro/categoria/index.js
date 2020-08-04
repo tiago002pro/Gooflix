@@ -18,10 +18,11 @@ export default function Categoria() {
 			.create({
 				titulo: values.title,
 				descricao: values.description,
-				cor: '#110AFF',
+				cor: values.color,
 			})
 			.then(() => {
 				toast.success('Categoria cadastrada.');
+				console.log('Cadastrado com sucesso!');
 				clearForm();
 			});
 	}

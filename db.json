@@ -32,6 +32,18 @@
       "descricao": "",
       "cor": "#110AFF",
       "id": 4
+    },
+    {
+      "titulo": "Projeto Norte",
+      "descricao": "",
+      "cor": "#110AFF",
+      "id": 5
+    },
+    {
+      "titulo": "SALZBAND",
+      "descricao": "",
+      "cor": "#c80909",
+      "id": 6
     }
   ],
   "videos": [
@@ -190,6 +202,60 @@
       "url": "https://www.youtube.com/watch?v=sX0KVSex6lI",
       "categoriaId": 4,
       "id": 26
+    },
+    {
+      "titulo": "Projeto Norte - Recomeçar | Live Session",
+      "url": "https://www.youtube.com/watch?v=3GAKOQ-gvzM",
+      "categoriaId": 5,
+      "id": 27
+    },
+    {
+      "titulo": "Projeto Norte - Incrivelmente | Live Session",
+      "url": "https://www.youtube.com/watch?v=Uu_u1OnqZXU",
+      "categoriaId": 5,
+      "id": 28
+    },
+    {
+      "titulo": "Projeto Norte - Maravilhosa Graça | Live Session",
+      "url": "https://www.youtube.com/watch?v=NJWA0A7hfk4",
+      "categoriaId": 5,
+      "id": 29
+    },
+    {
+      "titulo": "Ó Vinde Adoremos - Advento Tour em São Paulo - Projeto Sola",
+      "url": "https://www.youtube.com/watch?v=pqsqL5iTpOI",
+      "categoriaId": 4,
+      "id": 30
+    },
+    {
+      "titulo": "Projeto Norte - Calvário | Live Session",
+      "url": "https://www.youtube.com/watch?v=6t0hbkOQ1Po",
+      "categoriaId": 5,
+      "id": 31
+    },
+    {
+      "titulo": "Projeto Norte - Porque Ele Vive",
+      "url": "https://www.youtube.com/watch?v=Nugf9KsA7ss",
+      "categoriaId": 5,
+      "id": 32
+    },
+    {
+      "titulo": "https://www.youtube.com/watch?v=33bQTEkTa1s",
+      "url": "Até Outra Vez (Bênção) - Advento Tour em São Paulo - Projeto Sola",
+      "categoriaId": 4,
+      "id": 33
+    },
+    {
+      "titulo": "Isaías 53 & Foi na Cruz | IPALPHA Música",
+      "url": "https://www.youtube.com/watch?v=HML9NUQJZEU",
+      "categoriaId": 4,
+      "id": 34
+    },
+    {
+      "titulo": "SALZBAND - Vem Soprar // INVSBL sessions",
+      "url": "https://www.youtube.com/watch?v=jfKEe7eyi0Y",
+      "categoriaId": 6,
+      "id": 35
     }
   ]
 }
